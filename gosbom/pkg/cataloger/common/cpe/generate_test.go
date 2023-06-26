@@ -199,7 +199,7 @@ func TestGeneratePackageCPEs(t *testing.T) {
 			},
 		},
 		{
-			name: "java with URL in metadata", // regression: https://github.com/nextlinux/grype/issues/417
+			name: "java with URL in metadata", // regression: https://github.com/anchore/grype/issues/417
 			p: pkg.Package{
 				Name:         "wstx-asl",
 				Version:      "3.2.7",
