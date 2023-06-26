@@ -78,4 +78,3 @@ runs:
     - name: Create all cache fingerprints
       shell: bash
       run: make fingerprints
-
