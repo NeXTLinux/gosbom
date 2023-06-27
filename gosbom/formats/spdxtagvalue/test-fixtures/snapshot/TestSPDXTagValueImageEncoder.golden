@@ -4,7 +4,7 @@ SPDXID: SPDXRef-DOCUMENT
 DocumentName: user-image-input
 DocumentNamespace: https://anchore.com/gosbom/image/user-image-input-44d44a85-2207-4b51-bd73-d0c7b080f6d3
 LicenseListVersion: 3.20
-Creator: Organization: Anchore, Inc
+Creator: Organization: Nextlinux, Inc
 Creator: Tool: gosbom-v0.42.0-bogus
 Created: 2023-05-09T17:11:49Z
 

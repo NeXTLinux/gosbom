@@ -4,7 +4,7 @@ SPDXID: SPDXRef-DOCUMENT
 DocumentName: /some/path
 DocumentNamespace: https://anchore.com/gosbom/dir/some/path-f7bdb1ee-7fef-48e7-a386-6ee3836d4a28
 LicenseListVersion: 3.20
-Creator: Organization: Anchore, Inc
+Creator: Organization: Nextlinux, Inc
 Creator: Tool: gosbom-v0.42.0-bogus
 Created: 2023-05-09T17:11:49Z
 
