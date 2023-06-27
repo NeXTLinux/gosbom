@@ -1,0 +1,249 @@
+release:
+  prerelease: auto
+  draft: false
+
+env:
+  # required to support multi architecture docker builds
+  - DOCKER_CLI_EXPERIMENTAL=enabled
+  - CGO_ENABLED=0
+
+builds:
+  - id: linux-build
+    dir: ./cmd/gosbom
+    binary: gosbom
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+      - ppc64le
+      - s390x
+    # set the modified timestamp on the output binary to the git timestamp to ensure a reproducible build
+    mod_timestamp: &build-timestamp '{{ .CommitTimestamp }}'
+    ldflags: &build-ldflags |
+      -w
+      -s
+      -extldflags '-static'
+      -X github.com/nextlinux/gosbom/internal/version.version={{.Version}}
+      -X github.com/nextlinux/gosbom/internal/version.gitCommit={{.Commit}}
+      -X github.com/nextlinux/gosbom/internal/version.buildDate={{.Date}}
+      -X github.com/nextlinux/gosbom/internal/version.gitDescription={{.Summary}}
+
+  - id: darwin-build
+    dir: ./cmd/gosbom
+    binary: gosbom
+    goos:
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    mod_timestamp: *build-timestamp
+    ldflags: *build-ldflags
+    hooks:
+      post:
+        - cmd: .tmp/quill sign-and-notarize "{{ .Path }}" --dry-run={{ .IsSnapshot }} --ad-hoc={{ .IsSnapshot }} -vv
+          env:
+            - QUILL_LOG_FILE=/tmp/quill-{{ .Target }}.log
+
+  - id: windows-build
+    dir: ./cmd/gosbom
+    binary: gosbom
+    goos:
+      - windows
+    goarch:
+      - amd64
+    mod_timestamp: *build-timestamp
+    ldflags: *build-ldflags
+
+archives:
+  - id: linux-archives
+    builds:
+      - linux-build
+
+  # note: the signing process is depending on tar.gz archives. If this format changes then .github/scripts/apple-signing/*.sh will need to be adjusted
+  - id: darwin-archives
+    builds:
+      - darwin-build
+
+  - id: windows-archives
+    format: zip
+    builds:
+      - windows-build
+
+nfpms:
+  - license: "Apache 2.0"
+    maintainer: "Nextlinux, Inc"
+    homepage: &website "https://github.com/nextlinux/gosbom"
+    description: &description "A tool that generates a Software Bill Of Materials (SBOM) from container images and filesystems"
+    formats:
+      - rpm
+      - deb
+
+brews:
+  - tap:
+      owner: nextlinux
+      name: homebrew-gosbom
+      token: "{{.Env.GITHUB_BREW_TOKEN}}"
+    ids:
+      - darwin-archives
+      - linux-archives
+    homepage: *website
+    description: *description
+    license: "Apache License 2.0"
+
+dockers:
+  - image_templates:
+      - nextlinux/gosbom:debug
+      - nextlinux/gosbom:{{.Tag}}-debug
+      - ghcr.io/nextlinux/gosbom:debug
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-debug
+    goarch: amd64
+    dockerfile: Dockerfile.debug
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/amd64"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/gosbom:debug-arm64v8
+      - nextlinux/gosbom:{{.Tag}}-debug-arm64v8
+      - ghcr.io/nextlinux/gosbom:debug-arm64v8
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-debug-arm64v8
+    goarch: arm64
+    dockerfile: Dockerfile.debug
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/arm64/v8"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/gosbom:debug-ppc64le
+      - nextlinux/gosbom:{{.Tag}}-debug-ppc64le
+      - ghcr.io/nextlinux/gosbom:debug-ppc64le
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-debug-ppc64le
+    goarch: ppc64le
+    dockerfile: Dockerfile.debug
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/ppc64le"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/gosbom:debug-s390x
+      - nextlinux/gosbom:{{.Tag}}-debug-s390x
+      - ghcr.io/nextlinux/gosbom:debug-s390x
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-debug-s390x
+    goarch: s390x
+    dockerfile: Dockerfile.debug
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/s390x"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/gosbom:latest
+      - nextlinux/gosbom:{{.Tag}}
+      - ghcr.io/nextlinux/gosbom:latest
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}
+    goarch: amd64
+    dockerfile: Dockerfile
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/amd64"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/gosbom:{{.Tag}}-arm64v8
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-arm64v8
+    goarch: arm64
+    dockerfile: Dockerfile
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/arm64/v8"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/gosbom:{{.Tag}}-ppc64le
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-ppc64le
+    goarch: ppc64le
+    dockerfile: Dockerfile
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/ppc64le"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+  - image_templates:
+      - nextlinux/gosbom:{{.Tag}}-s390x
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-s390x
+    goarch: s390x
+    dockerfile: Dockerfile
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/s390x"
+      - "--build-arg=BUILD_DATE={{.Date}}"
+      - "--build-arg=BUILD_VERSION={{.Version}}"
+      - "--build-arg=VCS_REF={{.FullCommit}}"
+      - "--build-arg=VCS_URL={{.GitURL}}"
+
+docker_manifests:
+  - name_template: nextlinux/gosbom:latest
+    image_templates:
+      - nextlinux/gosbom:{{.Tag}}
+      - nextlinux/gosbom:{{.Tag}}-arm64v8
+      - nextlinux/gosbom:{{.Tag}}-ppc64le
+      - nextlinux/gosbom:{{.Tag}}-s390x
+
+  - name_template: nextlinux/gosbom:debug
+      - nextlinux/gosbom:{{.Tag}}-debug
+      - nextlinux/gosbom:{{.Tag}}-debug-arm64v8
+      - nextlinux/gosbom:{{.Tag}}-debug-ppc64le
+      - nextlinux/gosbom:{{.Tag}}-debug-s390x
+
+  - name_template: nextlinux/gosbom:{{.Tag}}
+    image_templates:
+      - nextlinux/gosbom:{{.Tag}}
+      - nextlinux/gosbom:{{.Tag}}-arm64v8
+      - nextlinux/gosbom:{{.Tag}}-ppc64le
+      - nextlinux/gosbom:{{.Tag}}-s390x
+
+  - name_template: ghcr.io/nextlinux/gosbom:latest
+    image_templates:
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-arm64v8
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-ppc64le
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-s390x
+
+  - name_template: ghcr.io/nextlinux/gosbom:debug
+    image_templates:
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-debug
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-debug-arm64v8
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-debug-ppc64le
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-debug-s390x
+
+  - name_template: ghcr.io/nextlinux/gosbom:{{.Tag}}
+    image_templates:
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-arm64v8
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-ppc64le
+      - ghcr.io/nextlinux/gosbom:{{.Tag}}-s390x
