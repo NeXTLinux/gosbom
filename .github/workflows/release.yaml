@@ -112,13 +112,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build & publish release artifacts
-        run: make ci-release
-        env:
-          # for mac signing and notarization...
-          # for creating the release (requires write access to packages and content)
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # for updating the VERSION file in S3...
-
       - uses: anchore/sbom-action@v0
         continue-on-error: true
         with:
