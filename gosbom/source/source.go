@@ -20,10 +20,10 @@ import (
 
 	"github.com/anchore/stereoscope"
 	"github.com/anchore/stereoscope/pkg/image"
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/internal/fileresolver"
+	"github.com/nextlinux/gosbom/internal/log"
 )
 
 // Source is an object that captures the data source to be cataloged, configuration, and a specific resolver used
