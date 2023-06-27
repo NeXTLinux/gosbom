@@ -10,11 +10,10 @@ import (
 	"path"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/internal/unionreader"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestParseNativeImage(t *testing.T) {

@@ -7,9 +7,8 @@ import (
 	"testing"
 
 	"github.com/docker/docker/pkg/homedir"
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_MakeSBOMWriter(t *testing.T) {

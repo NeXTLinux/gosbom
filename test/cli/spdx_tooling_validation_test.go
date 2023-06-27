@@ -32,23 +32,23 @@ func TestSpdxValidationTooling(t *testing.T) {
 	}
 
 	tests := []struct {
-		name     string
+		name       string
 		gosbomArgs []string
-		images   []string
-		setup    func(t *testing.T)
-		env      map[string]string
+		images     []string
+		setup      func(t *testing.T)
+		env        map[string]string
 	}{
 		{
-			name:     "spdx validation tooling tag value",
+			name:       "spdx validation tooling tag value",
 			gosbomArgs: []string{"packages", "-o", "spdx"},
-			images:   images,
-			env:      env,
+			images:     images,
+			env:        env,
 		},
 		{
-			name:     "spdx validation tooling json",
+			name:       "spdx validation tooling json",
 			gosbomArgs: []string{"packages", "-o", "spdx-json"},
-			images:   images,
-			env:      env,
+			images:     images,
+			env:        env,
 		},
 	}
 

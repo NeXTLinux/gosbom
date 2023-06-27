@@ -4,11 +4,10 @@ import (
 	"testing"
 
 	"github.com/CycloneDX/cyclonedx-go"
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/license"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/internal"
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_encodeLicense(t *testing.T) {

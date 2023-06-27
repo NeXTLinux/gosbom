@@ -4,22 +4,22 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/wagoodman/go-partybus"
-
-	"github.com/anchore/stereoscope"
 	"github.com/nextlinux/gosbom/cmd/gosbom/cli/eventloop"
 	"github.com/nextlinux/gosbom/cmd/gosbom/cli/options"
-	"github.com/nextlinux/gosbom/internal"
-	"github.com/nextlinux/gosbom/internal/bus"
-	"github.com/nextlinux/gosbom/internal/config"
-	"github.com/nextlinux/gosbom/internal/ui"
-	"github.com/nextlinux/gosbom/internal/version"
 	"github.com/nextlinux/gosbom/gosbom"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/event"
 	"github.com/nextlinux/gosbom/gosbom/formats/template"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/nextlinux/gosbom/internal"
+	"github.com/nextlinux/gosbom/internal/bus"
+	"github.com/nextlinux/gosbom/internal/config"
+	"github.com/nextlinux/gosbom/internal/ui"
+	"github.com/nextlinux/gosbom/internal/version"
+	"github.com/wagoodman/go-partybus"
+
+	"github.com/anchore/stereoscope"
 )
 
 func Run(_ context.Context, app *config.Application, args []string) error {

@@ -3,12 +3,11 @@ package rust
 import (
 	"fmt"
 
-	"github.com/pelletier/go-toml"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/generic"
+	"github.com/pelletier/go-toml"
 )
 
 var _ generic.Parser = parseCargoLock

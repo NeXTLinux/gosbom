@@ -3,11 +3,10 @@ package python
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/internal/pkgtest"
+	"github.com/stretchr/testify/require"
 )
 
 func Test_PackageCataloger(t *testing.T) {

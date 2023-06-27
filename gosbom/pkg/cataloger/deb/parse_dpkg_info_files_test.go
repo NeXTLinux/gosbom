@@ -5,10 +5,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/stretchr/testify/require"
 )
 
 func TestMD5SumInfoParsing(t *testing.T) {

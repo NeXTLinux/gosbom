@@ -3,10 +3,9 @@ package file
 import (
 	"testing"
 
+	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
-	"github.com/nextlinux/gosbom/gosbom/artifact"
 )
 
 func TestLocationSet(t *testing.T) {

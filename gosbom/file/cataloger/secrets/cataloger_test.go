@@ -4,10 +4,9 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
 	intFile "github.com/nextlinux/gosbom/internal/file"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSecretsCataloger(t *testing.T) {

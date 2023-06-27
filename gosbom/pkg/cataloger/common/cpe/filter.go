@@ -4,7 +4,6 @@ import (
 	"strings"
 
 	"github.com/facebookincubator/nvdtools/wfn"
-
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 )

@@ -6,7 +6,6 @@ import (
 	"runtime/debug"
 
 	"github.com/github/go-spdx/v2/spdxexp"
-
 	"github.com/nextlinux/gosbom/internal/spdxlicense"
 )
 

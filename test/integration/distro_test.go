@@ -3,10 +3,9 @@ package integration
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/linux"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestDistroImage(t *testing.T) {

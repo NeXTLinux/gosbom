@@ -7,6 +7,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nextlinux/gosbom/gosbom/artifact"
+	"github.com/nextlinux/gosbom/gosbom/cpe"
+	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/nextlinux/gosbom/gosbom/linux"
+	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/nextlinux/gosbom/gosbom/source"
 	"github.com/sergi/go-diff/diffmatchpatch"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -15,13 +22,6 @@ import (
 	"github.com/anchore/stereoscope/pkg/filetree"
 	"github.com/anchore/stereoscope/pkg/image"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/nextlinux/gosbom/gosbom/artifact"
-	"github.com/nextlinux/gosbom/gosbom/cpe"
-	"github.com/nextlinux/gosbom/gosbom/file"
-	"github.com/nextlinux/gosbom/gosbom/linux"
-	"github.com/nextlinux/gosbom/gosbom/pkg"
-	"github.com/nextlinux/gosbom/gosbom/sbom"
-	"github.com/nextlinux/gosbom/gosbom/source"
 )
 
 type redactor func(s []byte) []byte

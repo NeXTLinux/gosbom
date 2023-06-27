@@ -1,9 +1,10 @@
 package nix
 
 import (
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newNixStorePackage(storePath nixStorePath, locations ...file.Location) pkg.Package {

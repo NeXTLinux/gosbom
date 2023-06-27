@@ -3,11 +3,10 @@ package pkg
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/license"
 	"github.com/nextlinux/gosbom/internal"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLicenseSet_Add(t *testing.T) {

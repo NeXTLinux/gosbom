@@ -9,10 +9,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/spdx/tools-golang/spdx"
-	"golang.org/x/exp/maps"
-	"golang.org/x/exp/slices"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/formats/common/util"
@@ -21,6 +17,9 @@ import (
 	"github.com/nextlinux/gosbom/internal"
 	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/internal/spdxlicense"
+	"github.com/spdx/tools-golang/spdx"
+	"golang.org/x/exp/maps"
+	"golang.org/x/exp/slices"
 )
 
 const (

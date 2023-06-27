@@ -7,15 +7,14 @@ import (
 	"regexp"
 	"sort"
 
-	"github.com/wagoodman/go-partybus"
-	"github.com/wagoodman/go-progress"
-
 	"github.com/nextlinux/gosbom/gosbom/event"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	internal2 "github.com/nextlinux/gosbom/gosbom/file/cataloger/internal"
 	"github.com/nextlinux/gosbom/internal"
 	"github.com/nextlinux/gosbom/internal/bus"
 	"github.com/nextlinux/gosbom/internal/log"
+	"github.com/wagoodman/go-partybus"
+	"github.com/wagoodman/go-progress"
 )
 
 var DefaultSecretsPatterns = map[string]string{

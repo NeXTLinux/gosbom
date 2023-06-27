@@ -3,10 +3,11 @@ package alpm
 import (
 	"strings"
 
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/linux"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newPackage(m *parsedData, release *linux.Release, dbLocation file.Location) pkg.Package {

@@ -3,13 +3,13 @@ package integration
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
-
-	"github.com/anchore/stereoscope/pkg/imagetest"
 	"github.com/nextlinux/gosbom/gosbom"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/stretchr/testify/require"
+
+	"github.com/anchore/stereoscope/pkg/imagetest"
 )
 
 func catalogFixtureImage(t *testing.T, fixtureImageName string, scope source.Scope, catalogerCfg []string) (sbom.SBOM, *source.Source) {

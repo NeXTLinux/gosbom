@@ -6,9 +6,6 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxjson"
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxxml"
 	"github.com/nextlinux/gosbom/gosbom/formats/github"
@@ -19,6 +16,8 @@ import (
 	"github.com/nextlinux/gosbom/gosbom/formats/template"
 	"github.com/nextlinux/gosbom/gosbom/formats/text"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestIdentify(t *testing.T) {

@@ -3,9 +3,10 @@ package python
 import (
 	"fmt"
 
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newPackageForIndex(name, version string, locations ...file.Location) pkg.Package {

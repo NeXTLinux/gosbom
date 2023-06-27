@@ -3,9 +3,8 @@ package ui
 import (
 	"fmt"
 
-	"github.com/wagoodman/go-partybus"
-
 	gosbomEventParsers "github.com/nextlinux/gosbom/gosbom/event/parsers"
+	"github.com/wagoodman/go-partybus"
 )
 
 // handleExit is a UI function for processing the Exit bus event,

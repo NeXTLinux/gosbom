@@ -5,7 +5,6 @@ import (
 	"strings"
 
 	"github.com/CycloneDX/cyclonedx-go"
-
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/internal/spdxlicense"
 )

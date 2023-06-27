@@ -9,13 +9,13 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
+	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/nextlinux/gosbom/gosbom/source"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/nextlinux/gosbom/gosbom/file"
-	"github.com/nextlinux/gosbom/gosbom/pkg"
-	"github.com/nextlinux/gosbom/gosbom/source"
 )
 
 func Test_Cataloger_DefaultClassifiers_PositiveCases(t *testing.T) {

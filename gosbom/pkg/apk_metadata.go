@@ -8,9 +8,8 @@ import (
 	"strings"
 
 	"github.com/mitchellh/mapstructure"
-	"github.com/scylladb/go-set/strset"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/scylladb/go-set/strset"
 )
 
 const ApkDBGlob = "**/lib/apk/db/installed"

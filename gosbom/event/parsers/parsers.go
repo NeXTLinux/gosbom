@@ -7,13 +7,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/wagoodman/go-partybus"
-	"github.com/wagoodman/go-progress"
-
 	"github.com/nextlinux/gosbom/gosbom/event"
 	"github.com/nextlinux/gosbom/gosbom/event/monitor"
 	"github.com/nextlinux/gosbom/gosbom/file/cataloger/secrets"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger"
+	"github.com/wagoodman/go-partybus"
+	"github.com/wagoodman/go-progress"
 )
 
 type ErrBadPayload struct {

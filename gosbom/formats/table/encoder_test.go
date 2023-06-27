@@ -5,7 +5,6 @@ import (
 	"testing"
 
 	"github.com/go-test/deep"
-
 	"github.com/nextlinux/gosbom/gosbom/formats/internal/testutils"
 )
 

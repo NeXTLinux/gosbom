@@ -8,10 +8,6 @@ import (
 	"strings"
 
 	"github.com/google/go-cmp/cmp"
-
-	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
-	"github.com/nextlinux/gosbom/internal"
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/file"
@@ -20,6 +16,10 @@ import (
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/nextlinux/gosbom/internal"
+	"github.com/nextlinux/gosbom/internal/log"
+
+	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
 )
 
 func toGosbomModel(doc model.Document) (*sbom.SBOM, error) {

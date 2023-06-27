@@ -5,7 +5,6 @@ import (
 	"os"
 
 	"github.com/dave/jennifer/jen"
-
 	"github.com/nextlinux/gosbom/schema/json/internal"
 )
 

@@ -3,13 +3,12 @@ package sbom
 import (
 	"sort"
 
-	"golang.org/x/exp/slices"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/linux"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"golang.org/x/exp/slices"
 )
 
 type SBOM struct {

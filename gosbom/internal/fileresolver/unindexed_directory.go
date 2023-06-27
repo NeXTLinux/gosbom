@@ -12,11 +12,10 @@ import (
 
 	"github.com/bmatcuk/doublestar/v4"
 	"github.com/mitchellh/go-homedir"
+	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/spf13/afero"
 	"golang.org/x/exp/slices"
-
-	"github.com/nextlinux/gosbom/internal/log"
-	"github.com/nextlinux/gosbom/gosbom/file"
 )
 
 var _ file.Resolver = (*UnindexedDirectory)(nil)

@@ -13,6 +13,9 @@ import (
 
 	"github.com/dustin/go-humanize"
 	"github.com/gookit/color"
+	gosbomEventParsers "github.com/nextlinux/gosbom/gosbom/event/parsers"
+	"github.com/nextlinux/gosbom/internal"
+	"github.com/nextlinux/gosbom/internal/ui/components"
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
 	"github.com/wagoodman/go-progress/format"
@@ -20,9 +23,6 @@ import (
 
 	stereoEventParsers "github.com/anchore/stereoscope/pkg/event/parsers"
 	"github.com/anchore/stereoscope/pkg/image/docker"
-	"github.com/nextlinux/gosbom/internal"
-	"github.com/nextlinux/gosbom/internal/ui/components"
-	gosbomEventParsers "github.com/nextlinux/gosbom/gosbom/event/parsers"
 )
 
 const maxBarWidth = 50

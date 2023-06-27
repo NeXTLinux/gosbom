@@ -3,10 +3,9 @@ package integration
 import (
 	"testing"
 
-	_ "modernc.org/sqlite"
-
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	_ "modernc.org/sqlite"
 )
 
 func TestSqliteRpm(t *testing.T) {

@@ -4,13 +4,13 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/nextlinux/gosbom/gosbom/source"
 	"github.com/scylladb/go-set/strset"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/nextlinux/gosbom/gosbom/file"
-	"github.com/nextlinux/gosbom/gosbom/source"
 )
 
 func Test_allRegularFiles(t *testing.T) {

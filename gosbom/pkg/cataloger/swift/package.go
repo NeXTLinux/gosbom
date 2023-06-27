@@ -1,9 +1,10 @@
 package swift
 
 import (
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newPackage(name, version, hash string, locations ...file.Location) pkg.Package {

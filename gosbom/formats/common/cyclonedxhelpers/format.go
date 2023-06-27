@@ -5,7 +5,6 @@ import (
 
 	"github.com/CycloneDX/cyclonedx-go"
 	"github.com/google/uuid"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/linux"

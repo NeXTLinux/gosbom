@@ -6,12 +6,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/nextlinux/gosbom/gosbom/cpe"
+	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/scylladb/go-set"
 	"github.com/scylladb/go-set/strset"
 	"github.com/stretchr/testify/assert"
-
-	"github.com/nextlinux/gosbom/gosbom/cpe"
-	"github.com/nextlinux/gosbom/gosbom/pkg"
 )
 
 func TestGeneratePackageCPEs(t *testing.T) {

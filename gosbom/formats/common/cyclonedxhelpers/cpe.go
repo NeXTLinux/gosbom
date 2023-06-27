@@ -2,7 +2,6 @@ package cyclonedxhelpers
 
 import (
 	"github.com/CycloneDX/cyclonedx-go"
-
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/internal/log"

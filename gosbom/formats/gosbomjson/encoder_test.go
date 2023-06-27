@@ -5,7 +5,6 @@ import (
 	"regexp"
 	"testing"
 
-	stereoFile "github.com/anchore/stereoscope/pkg/file"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/file"
@@ -14,6 +13,8 @@ import (
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/gosbom/source"
+
+	stereoFile "github.com/anchore/stereoscope/pkg/file"
 )
 
 var updateJson = flag.Bool("update-json", false, "update the *.golden files for json encoders")

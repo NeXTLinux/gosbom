@@ -4,12 +4,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/vifraa/gopom"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/internal/pkgtest"
+	"github.com/stretchr/testify/assert"
+	"github.com/vifraa/gopom"
 )
 
 func Test_parserPomXML(t *testing.T) {

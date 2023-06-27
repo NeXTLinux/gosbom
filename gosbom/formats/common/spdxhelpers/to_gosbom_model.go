@@ -6,10 +6,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/spdx/tools-golang/spdx"
-
-	"github.com/anchore/packageurl-go"
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/file"
@@ -19,6 +15,10 @@ import (
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/nextlinux/gosbom/internal/log"
+	"github.com/spdx/tools-golang/spdx"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func ToGosbomModel(doc *spdx.Document) (*sbom.SBOM, error) {

@@ -4,10 +4,9 @@ import (
 	"sort"
 
 	"github.com/bmatcuk/doublestar/v4"
-	"github.com/scylladb/go-set/strset"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/internal/log"
+	"github.com/scylladb/go-set/strset"
 )
 
 // AltRpmDBGlob allows db matches against new locations introduced in fedora:{36,37}

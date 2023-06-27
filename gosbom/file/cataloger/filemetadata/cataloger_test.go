@@ -4,13 +4,13 @@ import (
 	"os"
 	"testing"
 
+	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/nextlinux/gosbom/gosbom/source"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/nextlinux/gosbom/gosbom/file"
-	"github.com/nextlinux/gosbom/gosbom/source"
 )
 
 func TestFileMetadataCataloger(t *testing.T) {

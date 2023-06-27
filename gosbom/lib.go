@@ -19,9 +19,6 @@ package gosbom
 import (
 	"fmt"
 
-	"github.com/wagoodman/go-partybus"
-
-	"github.com/anchore/go-logger"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/linux"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
@@ -29,6 +26,9 @@ import (
 	"github.com/nextlinux/gosbom/gosbom/source"
 	"github.com/nextlinux/gosbom/internal/bus"
 	"github.com/nextlinux/gosbom/internal/log"
+	"github.com/wagoodman/go-partybus"
+
+	"github.com/anchore/go-logger"
 )
 
 // CatalogPackages takes an inventory of packages from the given image from a particular perspective

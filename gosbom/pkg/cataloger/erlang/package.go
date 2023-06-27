@@ -1,9 +1,10 @@
 package erlang
 
 import (
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newPackage(d pkg.RebarLockMetadata, locations ...file.Location) pkg.Package {

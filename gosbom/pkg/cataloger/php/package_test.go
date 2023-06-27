@@ -3,9 +3,8 @@ package php
 import (
 	"testing"
 
-	"github.com/sergi/go-diff/diffmatchpatch"
-
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/sergi/go-diff/diffmatchpatch"
 )
 
 func Test_packageURL(t *testing.T) {

@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/mitchellh/go-homedir"
-
 	"github.com/nextlinux/gosbom/internal/log"
 )
 

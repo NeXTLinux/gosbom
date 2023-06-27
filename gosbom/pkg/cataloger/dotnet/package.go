@@ -3,9 +3,10 @@ package dotnet
 import (
 	"strings"
 
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newDotnetDepsPackage(nameVersion string, lib dotnetDepsLibrary, locations ...file.Location) *pkg.Package {

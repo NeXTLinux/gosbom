@@ -6,11 +6,10 @@ import (
 	"io"
 
 	"github.com/Masterminds/semver"
-
-	"github.com/nextlinux/gosbom/internal"
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/formats/gosbomjson/model"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/nextlinux/gosbom/internal"
+	"github.com/nextlinux/gosbom/internal/log"
 )
 
 func decoder(reader io.Reader) (*sbom.SBOM, error) {

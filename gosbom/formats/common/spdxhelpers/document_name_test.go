@@ -5,10 +5,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/nextlinux/gosbom/gosbom/source"
 	"github.com/scylladb/go-set/strset"
 	"github.com/stretchr/testify/assert"
-
-	"github.com/nextlinux/gosbom/gosbom/source"
 )
 
 func Test_DocumentName(t *testing.T) {

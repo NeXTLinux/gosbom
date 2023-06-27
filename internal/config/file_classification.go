@@ -1,9 +1,8 @@
 package config
 
 import (
-	"github.com/spf13/viper"
-
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/spf13/viper"
 )
 
 type fileClassification struct {

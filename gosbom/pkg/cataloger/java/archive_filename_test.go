@@ -3,9 +3,8 @@ package java
 import (
 	"testing"
 
-	"github.com/sergi/go-diff/diffmatchpatch"
-
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/sergi/go-diff/diffmatchpatch"
 )
 
 func TestExtractInfoFromJavaArchiveFilename(t *testing.T) {

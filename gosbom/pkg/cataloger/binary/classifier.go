@@ -11,13 +11,14 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/anchore/packageurl-go"
-	"github.com/nextlinux/gosbom/internal"
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/internal/unionreader"
+	"github.com/nextlinux/gosbom/internal"
+	"github.com/nextlinux/gosbom/internal/log"
+
+	"github.com/anchore/packageurl-go"
 )
 
 var emptyPURL = packageurl.PackageURL{}

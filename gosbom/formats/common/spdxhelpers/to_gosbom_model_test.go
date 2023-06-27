@@ -3,15 +3,14 @@ package spdxhelpers
 import (
 	"testing"
 
-	"github.com/spdx/tools-golang/spdx"
-	"github.com/spdx/tools-golang/spdx/v2/common"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/spdx/tools-golang/spdx"
+	"github.com/spdx/tools-golang/spdx/v2/common"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestToGosbomModel(t *testing.T) {
