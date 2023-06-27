@@ -3,9 +3,8 @@ package cyclonedxhelpers
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_encodeDescription(t *testing.T) {

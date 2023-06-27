@@ -6,9 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/olekukonko/tablewriter"
-
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/olekukonko/tablewriter"
 )
 
 func encoder(output io.Writer, s sbom.SBOM) error {

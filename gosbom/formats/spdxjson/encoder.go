@@ -4,11 +4,10 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/spdx/tools-golang/convert"
-	"github.com/spdx/tools-golang/spdx/v2/v2_2"
-
 	"github.com/nextlinux/gosbom/gosbom/formats/common/spdxhelpers"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/spdx/tools-golang/convert"
+	"github.com/spdx/tools-golang/spdx/v2/v2_2"
 )
 
 func encoder2_3(output io.Writer, s sbom.SBOM) error {

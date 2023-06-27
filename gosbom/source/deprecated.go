@@ -3,9 +3,10 @@ package source
 import (
 	"io"
 
+	"github.com/nextlinux/gosbom/gosbom/file"
+
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
 	"github.com/anchore/stereoscope/pkg/image"
-	"github.com/nextlinux/gosbom/gosbom/file"
 )
 
 // Deprecated: use file.Metadata instead

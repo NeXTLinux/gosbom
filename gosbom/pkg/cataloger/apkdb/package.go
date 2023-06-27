@@ -3,11 +3,12 @@ package apkdb
 import (
 	"strings"
 
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/license"
 	"github.com/nextlinux/gosbom/gosbom/linux"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newPackage(d parsedData, release *linux.Release, dbLocation file.Location) pkg.Package {

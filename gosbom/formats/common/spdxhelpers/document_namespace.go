@@ -7,7 +7,6 @@ import (
 	"strings"
 
 	"github.com/google/uuid"
-
 	"github.com/nextlinux/gosbom/gosbom/source"
 	"github.com/nextlinux/gosbom/internal"
 )

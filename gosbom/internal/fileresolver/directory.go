@@ -10,6 +10,9 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/nextlinux/gosbom/internal/log"
+
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
 	"github.com/anchore/stereoscope/pkg/filetree"
 	"github.com/nextlinux/gosbom/gosbom/file"

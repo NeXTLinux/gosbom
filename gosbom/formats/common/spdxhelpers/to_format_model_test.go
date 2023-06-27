@@ -5,14 +5,13 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/spdx/tools-golang/spdx"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/spdx/tools-golang/spdx"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 // TODO: Add ToFormatModel tests

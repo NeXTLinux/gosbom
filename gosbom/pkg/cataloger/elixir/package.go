@@ -1,9 +1,10 @@
 package elixir
 
 import (
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newPackage(d pkg.MixLockMetadata, locations ...file.Location) pkg.Package {

@@ -5,13 +5,12 @@ import (
 	"net/url"
 	"sort"
 
-	"gopkg.in/yaml.v3"
-
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/generic"
+	"github.com/nextlinux/gosbom/internal/log"
+	"gopkg.in/yaml.v3"
 )
 
 var _ generic.Parser = parsePubspecLock

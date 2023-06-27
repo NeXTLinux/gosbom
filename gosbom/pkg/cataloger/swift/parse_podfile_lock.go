@@ -5,12 +5,11 @@ import (
 	"io"
 	"strings"
 
-	"gopkg.in/yaml.v3"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/generic"
+	"gopkg.in/yaml.v3"
 )
 
 var _ generic.Parser = parsePodfileLock

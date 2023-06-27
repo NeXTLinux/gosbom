@@ -4,7 +4,6 @@ import (
 	"io"
 
 	"github.com/google/licensecheck"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/license"
 	"github.com/nextlinux/gosbom/gosbom/pkg"

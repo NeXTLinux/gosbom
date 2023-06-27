@@ -6,8 +6,6 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/cmd/gosbom/cli/convert"
 	"github.com/nextlinux/gosbom/gosbom/formats"
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxjson"
@@ -19,6 +17,7 @@ import (
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/gosbom/source"
 	"github.com/nextlinux/gosbom/internal/config"
+	"github.com/stretchr/testify/require"
 )
 
 // TestConvertCmd tests if the converted SBOM is a valid document according

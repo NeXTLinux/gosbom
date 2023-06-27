@@ -2,7 +2,6 @@ package cyclonedxjson
 
 import (
 	"github.com/CycloneDX/cyclonedx-go"
-
 	"github.com/nextlinux/gosbom/gosbom/formats/common/cyclonedxhelpers"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 )

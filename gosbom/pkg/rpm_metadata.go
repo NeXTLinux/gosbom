@@ -3,9 +3,8 @@ package pkg
 import (
 	"sort"
 
-	"github.com/scylladb/go-set/strset"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/scylladb/go-set/strset"
 )
 
 // /var/lib/rpm/... is the typical path for most distributions

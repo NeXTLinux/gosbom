@@ -3,9 +3,10 @@ package php
 import (
 	"strings"
 
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newComposerLockPackage(m parsedData, indexLocation file.Location) pkg.Package {

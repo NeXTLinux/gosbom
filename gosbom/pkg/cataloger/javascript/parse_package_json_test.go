@@ -3,11 +3,10 @@ package javascript
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/internal/pkgtest"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestParsePackageJSON(t *testing.T) {

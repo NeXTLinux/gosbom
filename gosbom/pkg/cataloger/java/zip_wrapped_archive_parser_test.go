@@ -5,10 +5,9 @@ import (
 	"path"
 	"testing"
 
+	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
-	"github.com/nextlinux/gosbom/gosbom/file"
 )
 
 func Test_parseZipWrappedJavaArchive(t *testing.T) {

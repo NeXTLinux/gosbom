@@ -4,10 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/spdx/tools-golang/json"
-
 	"github.com/nextlinux/gosbom/gosbom/formats/common/spdxhelpers"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/spdx/tools-golang/json"
 )
 
 func decoder(reader io.Reader) (s *sbom.SBOM, err error) {

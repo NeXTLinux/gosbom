@@ -7,17 +7,16 @@ import (
 	"sync"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/wagoodman/go-partybus"
-	"github.com/wagoodman/go-progress"
-
-	"github.com/nextlinux/gosbom/internal/bus"
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/event"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/linux"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/common/cpe"
+	"github.com/nextlinux/gosbom/internal/bus"
+	"github.com/nextlinux/gosbom/internal/log"
+	"github.com/wagoodman/go-partybus"
+	"github.com/wagoodman/go-progress"
 )
 
 // Monitor provides progress-related data for observing the progress of a Catalog() call (published on the event bus).

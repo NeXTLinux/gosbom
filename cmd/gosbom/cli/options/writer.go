@@ -9,12 +9,11 @@ import (
 
 	"github.com/hashicorp/go-multierror"
 	"github.com/mitchellh/go-homedir"
-
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/formats"
 	"github.com/nextlinux/gosbom/gosbom/formats/table"
 	"github.com/nextlinux/gosbom/gosbom/formats/template"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/nextlinux/gosbom/internal/log"
 )
 
 var _ sbom.Writer = (*sbomMultiWriter)(nil)

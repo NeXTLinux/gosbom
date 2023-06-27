@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"io"
 
-	macho "github.com/anchore/go-macholibre"
 	"github.com/nextlinux/gosbom/internal/log"
+
+	macho "github.com/anchore/go-macholibre"
 )
 
 // unionReader is a single interface with all reading functions needed by multi-arch binary catalogers

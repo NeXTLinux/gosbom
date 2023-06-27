@@ -11,7 +11,6 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"

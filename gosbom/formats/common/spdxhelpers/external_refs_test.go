@@ -3,10 +3,9 @@ package spdxhelpers
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_ExternalRefs(t *testing.T) {

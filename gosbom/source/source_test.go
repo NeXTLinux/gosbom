@@ -17,13 +17,13 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/nextlinux/gosbom/gosbom/artifact"
+	"github.com/nextlinux/gosbom/gosbom/internal/fileresolver"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/stereoscope/pkg/image"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/nextlinux/gosbom/gosbom/artifact"
-	"github.com/nextlinux/gosbom/gosbom/internal/fileresolver"
 )
 
 func TestParseInput(t *testing.T) {

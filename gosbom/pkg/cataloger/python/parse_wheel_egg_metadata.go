@@ -8,11 +8,10 @@ import (
 	"strings"
 
 	"github.com/mitchellh/mapstructure"
-
-	intFile "github.com/nextlinux/gosbom/internal/file"
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	intFile "github.com/nextlinux/gosbom/internal/file"
+	"github.com/nextlinux/gosbom/internal/log"
 )
 
 type parsedData struct {

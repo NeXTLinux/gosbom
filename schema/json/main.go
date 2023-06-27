@@ -11,7 +11,6 @@ import (
 	"strings"
 
 	"github.com/invopop/jsonschema"
-
 	gosbomjsonModel "github.com/nextlinux/gosbom/gosbom/formats/gosbomjson/model"
 	"github.com/nextlinux/gosbom/internal"
 	genInt "github.com/nextlinux/gosbom/schema/json/internal"

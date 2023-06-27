@@ -8,8 +8,6 @@ import (
 	"regexp"
 	"strings"
 
-	"golang.org/x/exp/slices"
-
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxjson"
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxxml"
 	"github.com/nextlinux/gosbom/gosbom/formats/github"
@@ -21,6 +19,7 @@ import (
 	"github.com/nextlinux/gosbom/gosbom/formats/text"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/internal/log"
+	"golang.org/x/exp/slices"
 )
 
 func Formats() []sbom.Format {

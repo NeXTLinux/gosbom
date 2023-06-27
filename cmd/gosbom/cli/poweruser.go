@@ -3,13 +3,12 @@ package cli
 import (
 	"fmt"
 
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
-
 	"github.com/nextlinux/gosbom/cmd/gosbom/cli/options"
 	"github.com/nextlinux/gosbom/cmd/gosbom/cli/poweruser"
 	"github.com/nextlinux/gosbom/internal"
 	"github.com/nextlinux/gosbom/internal/config"
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 const powerUserExample = `  {{.appName}} {{.command}} <image>

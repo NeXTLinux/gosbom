@@ -4,9 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestParseJavaPomProperties(t *testing.T) {

@@ -6,13 +6,6 @@ import (
 
 	cranecmd "github.com/google/go-containerregistry/cmd/crane/cmd"
 	"github.com/gookit/color"
-	logrusUpstream "github.com/sirupsen/logrus"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
-	"github.com/wagoodman/go-partybus"
-
-	"github.com/anchore/go-logger/adapter/logrus"
-	"github.com/anchore/stereoscope"
 	"github.com/nextlinux/gosbom/cmd/gosbom/cli/options"
 	"github.com/nextlinux/gosbom/gosbom"
 	"github.com/nextlinux/gosbom/gosbom/event"
@@ -21,6 +14,13 @@ import (
 	"github.com/nextlinux/gosbom/internal/config"
 	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/internal/version"
+	logrusUpstream "github.com/sirupsen/logrus"
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
+	"github.com/wagoodman/go-partybus"
+
+	"github.com/anchore/go-logger/adapter/logrus"
+	"github.com/anchore/stereoscope"
 )
 
 const indent = "  "

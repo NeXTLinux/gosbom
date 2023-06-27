@@ -3,9 +3,8 @@ package fileresolver
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/stretchr/testify/require"
 )
 
 func Test_NewDeferredResolver(t *testing.T) {

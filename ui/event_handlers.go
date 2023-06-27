@@ -13,6 +13,9 @@ import (
 
 	"github.com/dustin/go-humanize"
 	"github.com/gookit/color"
+	gosbomEventParsers "github.com/nextlinux/gosbom/gosbom/event/parsers"
+	"github.com/nextlinux/gosbom/internal"
+	"github.com/nextlinux/gosbom/internal/ui/components"
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
 	"github.com/wagoodman/go-progress/format"

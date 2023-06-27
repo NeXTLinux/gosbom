@@ -15,12 +15,12 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
+	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/scylladb/go-set/strset"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
-	"github.com/nextlinux/gosbom/gosbom/file"
 )
 
 func Test_UnindexDirectoryResolver_RequestRelativePathWithinSymlink(t *testing.T) {

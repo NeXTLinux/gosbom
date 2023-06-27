@@ -3,14 +3,13 @@ package options
 import (
 	"fmt"
 
-	"github.com/spf13/cobra"
-	"github.com/spf13/pflag"
-	"github.com/spf13/viper"
-
 	"github.com/nextlinux/gosbom/gosbom/formats"
 	"github.com/nextlinux/gosbom/gosbom/formats/table"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/spf13/cobra"
+	"github.com/spf13/pflag"
+	"github.com/spf13/viper"
 )
 
 type PackagesOptions struct {

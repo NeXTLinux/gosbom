@@ -5,12 +5,11 @@ import (
 	"strconv"
 
 	rpmdb "github.com/knqyf263/go-rpmdb/pkg"
-	"github.com/sassoftware/go-rpmutils"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/pkg/cataloger/generic"
+	"github.com/sassoftware/go-rpmutils"
 )
 
 // parseRpm parses a single RPM

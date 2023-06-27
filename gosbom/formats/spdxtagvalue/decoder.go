@@ -4,10 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/spdx/tools-golang/tagvalue"
-
 	"github.com/nextlinux/gosbom/gosbom/formats/common/spdxhelpers"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/spdx/tools-golang/tagvalue"
 )
 
 func decoder(reader io.Reader) (*sbom.SBOM, error) {

@@ -3,11 +3,10 @@ package cataloger
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/stretchr/testify/assert"
 )
 
 var _ pkg.Cataloger = (*dummy)(nil)

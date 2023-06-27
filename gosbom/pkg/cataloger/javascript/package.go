@@ -6,10 +6,11 @@ import (
 	"path"
 	"strings"
 
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/internal/log"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func newPackageJSONPackage(u packageJSON, indexLocation file.Location) pkg.Package {

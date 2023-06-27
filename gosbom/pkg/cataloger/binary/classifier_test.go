@@ -3,10 +3,9 @@ package binary
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/stretchr/testify/require"
 )
 
 func Test_ClassifierCPEs(t *testing.T) {

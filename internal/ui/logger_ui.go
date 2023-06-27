@@ -1,10 +1,9 @@
 package ui
 
 import (
-	"github.com/wagoodman/go-partybus"
-
-	"github.com/nextlinux/gosbom/internal/log"
 	gosbomEvent "github.com/nextlinux/gosbom/gosbom/event"
+	"github.com/nextlinux/gosbom/internal/log"
+	"github.com/wagoodman/go-partybus"
 )
 
 type loggerUI struct {

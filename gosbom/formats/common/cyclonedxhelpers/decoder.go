@@ -5,14 +5,14 @@ import (
 	"io"
 
 	"github.com/CycloneDX/cyclonedx-go"
-
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/formats/common"
 	"github.com/nextlinux/gosbom/gosbom/linux"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/gosbom/source"
+
+	"github.com/anchore/packageurl-go"
 )
 
 func GetValidator(format cyclonedx.BOMFileFormat) sbom.Validator {

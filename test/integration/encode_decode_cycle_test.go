@@ -6,16 +6,15 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/sergi/go-diff/diffmatchpatch"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/formats"
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxjson"
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxxml"
 	"github.com/nextlinux/gosbom/gosbom/formats/gosbomjson"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
 	"github.com/nextlinux/gosbom/gosbom/source"
+	"github.com/sergi/go-diff/diffmatchpatch"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 // TestEncodeDecodeEncodeCycleComparison is testing for differences in how SBOM documents get encoded on multiple cycles.

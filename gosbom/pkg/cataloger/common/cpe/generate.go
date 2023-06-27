@@ -8,11 +8,10 @@ import (
 	"strings"
 
 	"github.com/facebookincubator/nvdtools/wfn"
-	"github.com/scylladb/go-set/strset"
-
-	"github.com/nextlinux/gosbom/internal"
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+	"github.com/nextlinux/gosbom/internal"
+	"github.com/scylladb/go-set/strset"
 )
 
 // knownVendors contains vendor strings that are known to exist in

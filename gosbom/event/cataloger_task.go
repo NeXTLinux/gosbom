@@ -1,10 +1,9 @@
 package event
 
 import (
+	"github.com/nextlinux/gosbom/internal/bus"
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
-
-	"github.com/nextlinux/gosbom/internal/bus"
 )
 
 type CatalogerTask struct {

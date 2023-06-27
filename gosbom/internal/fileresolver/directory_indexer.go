@@ -10,6 +10,10 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/nextlinux/gosbom/gosbom/event"
+	"github.com/nextlinux/gosbom/internal"
+	"github.com/nextlinux/gosbom/internal/bus"
+	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
 

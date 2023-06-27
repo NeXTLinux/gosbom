@@ -3,10 +3,9 @@ package pkg
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestOwnershipByFilesRelationship(t *testing.T) {

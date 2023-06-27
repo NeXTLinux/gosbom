@@ -3,13 +3,12 @@ package pkg
 import (
 	"testing"
 
-	"github.com/scylladb/go-set/strset"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/gosbom/cpe"
 	"github.com/nextlinux/gosbom/gosbom/file"
+	"github.com/scylladb/go-set/strset"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 type expectedIndexes struct {

@@ -2,10 +2,10 @@ package rust
 
 import (
 	"github.com/microsoft/go-rustaudit"
-
-	"github.com/anchore/packageurl-go"
 	"github.com/nextlinux/gosbom/gosbom/file"
 	"github.com/nextlinux/gosbom/gosbom/pkg"
+
+	"github.com/anchore/packageurl-go"
 )
 
 // Pkg returns the standard `pkg.Package` representation of the package referenced within the Cargo.lock metadata.

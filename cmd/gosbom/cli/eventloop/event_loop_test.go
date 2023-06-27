@@ -7,12 +7,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nextlinux/gosbom/gosbom/event"
+	"github.com/nextlinux/gosbom/internal/ui"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/wagoodman/go-partybus"
-
-	"github.com/nextlinux/gosbom/internal/ui"
-	"github.com/nextlinux/gosbom/gosbom/event"
 )
 
 var _ ui.UI = (*uiMock)(nil)

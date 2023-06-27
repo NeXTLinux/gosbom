@@ -3,9 +3,8 @@ package main
 import (
 	"log"
 
-	_ "modernc.org/sqlite"
-
 	"github.com/nextlinux/gosbom/cmd/gosbom/cli"
+	_ "modernc.org/sqlite"
 )
 
 func main() {

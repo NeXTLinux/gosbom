@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/nextlinux/gosbom/internal"
 	"github.com/xeipuuv/gojsonschema"
 
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/nextlinux/gosbom/internal"
 )
 
 // this is the path to the json schema directory relative to the root of the repo

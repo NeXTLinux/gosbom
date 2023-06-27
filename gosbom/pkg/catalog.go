@@ -4,7 +4,6 @@ import (
 	"sync"
 
 	"github.com/jinzhu/copier"
-
 	"github.com/nextlinux/gosbom/gosbom/artifact"
 	"github.com/nextlinux/gosbom/internal"
 	"github.com/nextlinux/gosbom/internal/log"

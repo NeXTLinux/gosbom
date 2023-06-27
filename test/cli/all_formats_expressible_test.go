@@ -4,10 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/stretchr/testify/require"
-
 	"github.com/nextlinux/gosbom/gosbom/formats"
 	"github.com/nextlinux/gosbom/gosbom/formats/template"
+	"github.com/stretchr/testify/require"
 )
 
 func TestAllFormatsExpressible(t *testing.T) {

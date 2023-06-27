@@ -11,6 +11,9 @@ import (
 	"os"
 	"sync"
 
+	gosbomEvent "github.com/nextlinux/gosbom/gosbom/event"
+	"github.com/nextlinux/gosbom/internal/log"
+	"github.com/nextlinux/gosbom/ui"
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/jotframe/pkg/frame"
 
