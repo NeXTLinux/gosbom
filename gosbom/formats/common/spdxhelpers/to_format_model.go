@@ -106,7 +106,7 @@ func ToFormatModel(s sbom.SBOM) *spdx.Document {
 			// Cardinality: mandatory, one or many
 			Creators: []spdx.Creator{
 				{
-					Creator:     "Anchore, Inc",
+					Creator:     "Nextlinux, Inc",
 					CreatorType: "Organization",
 				},
 				{
