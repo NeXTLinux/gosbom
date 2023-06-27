@@ -7,17 +7,17 @@
 [![GitHub release](https://img.shields.io/github/release/nextlinux/gosbom.svg)](https://github.com/nextlinux/gosbom/releases/latest)
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/nextlinux/gosbom.svg)](https://github.com/nextlinux/gosbom)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/nextlinux/gosbom/blob/main/LICENSE)
-[![Slack Invite](https://img.shields.io/badge/Slack-Join-blue?logo=slack)](https://nextlinux.com/slack)
+[![Slack Invite](https://img.shields.io/badge/Slack-Join-blue?logo=slack)](https://anchore.com/slack)
 
-A CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems. Exceptional for vulnerability detection when used with a scanner like [Grype](https://github.com/nextlinux/grype).
+A CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems. Exceptional for vulnerability detection when used with a scanner like [Grype](https://github.com/anchore/grype).
 
 ### Join our community meetings!
 
 - Calendar: https://calendar.google.com/calendar/u/0/r?cid=Y182OTM4dGt0MjRtajI0NnNzOThiaGtnM29qNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
-- Agenda: https://docs.google.com/document/d/1ZtSAa6fj2a6KRWviTn3WoJm09edvrNUp4Iz_dOjjyY8/edit?usp=sharing (join [this group](https://groups.google.com/g/nextlinux-oss-community) for write access)
+- Agenda: https://docs.google.com/document/d/1ZtSAa6fj2a6KRWviTn3WoJm09edvrNUp4Iz_dOjjyY8/edit?usp=sharing (join [this group](https://groups.google.com/g/anchore-oss-community) for write access)
 - All are welcome!
 
-For commercial support options with Gosbom or Grype, please [contact Nextlinux](https://get.nextlinux.com/contact/)
+For commercial support options with Gosbom or Grype, please [contact Nextlinux](https://get.anchore.com/contact/)
 
 ![gosbom-demo](https://user-images.githubusercontent.com/590471/90277200-2a253000-de33-11ea-893f-32c219eea11a.gif)
 
@@ -25,7 +25,7 @@ For commercial support options with Gosbom or Grype, please [contact Nextlinux](
 - Generates SBOMs for container images, filesystems, archives, and more to discover packages and libraries
 - Supports OCI, Docker and [Singularity](https://github.com/sylabs/singularity) image formats
 - Linux distribution identification
-- Works seamlessly with [Grype](https://github.com/nextlinux/grype) (a fast, modern vulnerability scanner)
+- Works seamlessly with [Grype](https://github.com/anchore/grype) (a fast, modern vulnerability scanner)
 - Able to create signed SBOM attestations using the [in-toto specification](https://github.com/in-toto/attestation/blob/main/spec/README.md)
 - Convert between SBOM formats, such as CycloneDX, SPDX, and Gosbom's own format.
 
@@ -72,7 +72,7 @@ curl -sSfL https://raw.githubusercontent.com/nextlinux/gosbom/main/install.sh | 
 
 ### Chocolatey
 
-The chocolatey distribution of gosbom is community maintained and not distributed by the nextlinux team
+The chocolatey distribution of gosbom is community maintained and not distributed by the anchore team
 
 ```powershell
 choco install gosbom -y
@@ -688,7 +688,7 @@ log:
 
 `gosbom attest --output [FORMAT] --key [KEY] [SOURCE] [flags]`
 
-SBOMs themselves can serve as input to different analysis tools. [Grype](https://github.com/nextlinux/grype), a vulnerability scanner CLI tool from Nextlinux, is one such tool. Publishers of container images can use attestations to enable their consumers to trust Gosbom-generated SBOM descriptions of those container images. To create and provide these attestations, image publishers can run `gosbom attest` in conjunction with the [cosign](https://github.com/sigstore/cosign) tool to attach SBOM attestations to their images.
+SBOMs themselves can serve as input to different analysis tools. [Grype](https://github.com/anchore/grype), a vulnerability scanner CLI tool from Nextlinux, is one such tool. Publishers of container images can use attestations to enable their consumers to trust Gosbom-generated SBOM descriptions of those container images. To create and provide these attestations, image publishers can run `gosbom attest` in conjunction with the [cosign](https://github.com/sigstore/cosign) tool to attach SBOM attestations to their images.
 
 #### Example attestation
 Note for the following example replace `docker.io/image:latest` with an image you own. You should also have push access to

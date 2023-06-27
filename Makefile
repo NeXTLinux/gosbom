@@ -3,7 +3,7 @@ TEMP_DIR := ./.tmp
 
 # Command templates #################################
 LINT_CMD := $(TEMP_DIR)/golangci-lint run --tests=false
-GOIMPORTS_CMD := $(TEMP_DIR)/gosimports -local github.com/nextlinux
+GOIMPORTS_CMD := $(TEMP_DIR)/gosimports -local github.com/anchore
 RELEASE_CMD := $(TEMP_DIR)/goreleaser release --clean
 SNAPSHOT_CMD := $(RELEASE_CMD) --skip-publish --skip-sign --snapshot
 CHRONICLE_CMD = $(TEMP_DIR)/chronicle
