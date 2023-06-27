@@ -10,17 +10,17 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/nextlinux/gosbom/internal/log"
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxjson"
 	"github.com/nextlinux/gosbom/gosbom/formats/cyclonedxxml"
 	"github.com/nextlinux/gosbom/gosbom/formats/github"
+	"github.com/nextlinux/gosbom/gosbom/formats/gosbomjson"
 	"github.com/nextlinux/gosbom/gosbom/formats/spdxjson"
 	"github.com/nextlinux/gosbom/gosbom/formats/spdxtagvalue"
-	"github.com/nextlinux/gosbom/gosbom/formats/gosbomjson"
 	"github.com/nextlinux/gosbom/gosbom/formats/table"
 	"github.com/nextlinux/gosbom/gosbom/formats/template"
 	"github.com/nextlinux/gosbom/gosbom/formats/text"
 	"github.com/nextlinux/gosbom/gosbom/sbom"
+	"github.com/nextlinux/gosbom/internal/log"
 )
 
 func Formats() []sbom.Format {
