@@ -6,6 +6,7 @@ require (
 	github.com/DataDog/zstd v1.4.5 // indirect
 	github.com/acarl005/stripansi v0.0.0-20180116102854-5a71ef0e047d // indirect
 	github.com/acobaugh/osrelease v0.1.0 // indirect
+	github.com/anchore/go-struct-converter v0.0.0-20221118182256-c68fdcfa2092 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/facebookincubator/nvdtools v0.1.5 // indirect
@@ -25,6 +26,7 @@ require (
 	github.com/sassoftware/go-rpmutils v0.2.0 // indirect
 	github.com/scylladb/go-set v1.0.2 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
+	github.com/spdx/tools-golang v0.5.2 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
 	github.com/ulikunitz/xz v0.5.9 // indirect
 	github.com/vbatts/go-mtree v0.5.3 // indirect
