@@ -6,7 +6,7 @@
   "created": "2022-08-18T05:23:38.066146511Z",
   "creators": [
    "Organization: Nextlinux, Inc",
-   "Tool: syft-0.53.0"
+   "Tool: gosbom-0.53.0"
   ],
   "licenseListVersion": "3.17"
  },
