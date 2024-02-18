@@ -52,7 +52,7 @@ require (
 	github.com/CycloneDX/cyclonedx-go v0.7.1
 	github.com/Masterminds/semver v1.5.0
 	github.com/Masterminds/sprig/v3 v3.2.3
-	github.com/anchore/go-logger v0.0.0-20220728155337-03b66a5207d8
+	github.com/anchore/go-logger v0.0.0-20240217160628-ee28a485904f
 	github.com/anchore/stereoscope v0.0.0-20230622163731-8c7173ebcf69
 	github.com/dave/jennifer v1.6.1
 	github.com/deitch/magic v0.0.0-20230404182410-1ff89d7342da
